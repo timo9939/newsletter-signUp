@@ -1,2 +1,66 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    border: none;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+
+
+}
+
+body{
+    background-color: rgb(7, 14, 42);
+}
+
+.section-container{
+    background-color: rgb(172, 240, 77);
+    display: flex;
+    border: 2px solid rgb(201, 106, 106);
+
+    justify-content: center;
+}
+
+form{
+    background-color: white;
+    padding: 8vw;
+}
+
+form h1{
+
+}
+
+form p, form ul li{
+    font-weight: 400;
+}
+
+.success{
+    background-color: greenyellow;
+    display: none;
+}
+
+img{
+    text-align: right;
+}
+
+li{
+    list-style-type: none;
+}
+
+#input{
+    border: solid 1px;
+}
+
+.button{
+    color: white;
+    font-size: 16px;
+
+    width: 20vw;
+    height: 3vw;
+    background-color: rgba(24, 24, 150, 0.943);
+border-radius: 1vw;
+}
+
+.button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
