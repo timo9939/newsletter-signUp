@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<div class="section-container">
+<div class="section-container" id="mainPage">
   <!-- Sign-up form start -->
 <form  class="left-section" onsubmit="return form_submission()">
 
@@ -32,13 +32,13 @@
 
 
 <label for="input">  Email address: </label>
-
+<br>
 <input type="email" id="input" placeholder="email@company.com">
 
 <br>
 <br>
 
-<input type="submit" value="Subscribe to monthly newsletter" class="button"> 
+<input type="submit"  value="Subscribe to monthly newsletter" class="button" id="submit-Btn"> 
 
 </form>
 <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration">
@@ -46,7 +46,7 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-<section class="success">
+<section class="success" id="success">
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
