@@ -66,7 +66,7 @@ border-radius: 1vw;
 .success{
     font-family: 'Roboto', sans-serif;
     width: 30vw;
-    height: 60%;
+    min-height: 50vh;
 
     position: absolute;
     left: 35vw;
@@ -111,4 +111,55 @@ border-radius: 1vw;
 
 #success-btn:hover{
     background-color: tomato;
+}
+
+/* Media Queries */
+@media (max-width: 950px)  {
+    body{font-size: 0.85em;}
+
+    #tick{
+        scale:1.5;
+    }
+
+    #success-btn{
+        font-size: 10px;
+    }
+    .success{
+        font-size: 12px;
+        min-height: 20em;
+    }
+
+    #success-title{
+        font-size: 20px;
+    }
+
+    #main-photo{
+        width: 50vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 950px) and (orientation: portrait){
+body{ text-align: left;
+margin: 0;
+padding: 0;
+}
+
+ul{
+    padding: 0px;
+}
+
+#submit-Btn{
+    color:red;
+    font-size: 12px;
+    padding: 0;
+    min-width: 10em;
+    min-height: 2em;
+    display:block;
+   
+   
+
+    
+}
+
 }
