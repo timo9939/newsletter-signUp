@@ -41,6 +41,20 @@ li{
     list-style-type: none;
 }
 
+.label-container{
+    display: flexbox;
+
+}
+
+#error-label{
+    position: relative;
+    width: fit-content;
+left: 9em;
+right: 9em;
+    color: red;
+    display: none;
+}
+
 #input{
     border: solid 1px;
     width: 60%;

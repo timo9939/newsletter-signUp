@@ -6,11 +6,15 @@ const main=document.getElementById("mainPage")
 const successMessage=document.getElementById("success")
 const emailInput=document.getElementById("input")
 let emailDisplay=document.getElementById("client-email")
+const errorMessage= document.getElementById("error-label")
 
 const successButton=document.getElementById("success-btn")
 successButton.addEventListener("click",back_to_homepage)
 
 function form_submission(event){
+
+
+    
     event.preventDefault()
     alert('Submit button pressed');
     main.style.display="none";
@@ -18,7 +22,7 @@ function form_submission(event){
     emailDisplay.textContent=emailInput.value
 
     successMessage.style.display="block"
-
+    errorMessage.style.display="inline"
  
 }
 
