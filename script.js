@@ -11,20 +11,39 @@ const errorMessage= document.getElementById("error-label")
 const successButton=document.getElementById("success-btn")
 successButton.addEventListener("click",back_to_homepage)
 
+// Submission Buton
 function form_submission(event){
 
 
-    
+
     event.preventDefault()
-    alert('Submit button pressed');
+
+// Email Validation
+const Validation= /@/
+if(Validation.test(emailInput.value)){
+    
+    alert("Match pattern email")
     main.style.display="none";
     console.log(`Email is ${emailInput.value}`)
     emailDisplay.textContent=emailInput.value
 
     successMessage.style.display="block"
-    errorMessage.style.display="inline"
- 
+
+
 }
+
+else{
+    errorMessage.style.display="inline"
+    alert("Invalid email")
+    console.log("Email is",emailInput.textContent)
+}
+
+
+
+}
+
+
+// back to home button
 
 function back_to_homepage(event2){
 event2.preventDefault()
